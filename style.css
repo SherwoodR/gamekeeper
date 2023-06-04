@@ -201,3 +201,34 @@ nav ul ul {
   }
 }
 
+nav ul li:hover > ul {
+  display: block;
+  opacity: 0;
+  animation: fadeInDown 0.5s ease-in-out forwards;
+}
+
+nav ul ul {
+  animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
